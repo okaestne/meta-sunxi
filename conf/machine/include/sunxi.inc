@@ -18,6 +18,8 @@ PREFERRED_VERSION_linux-mainline ?= "6.6.%"
 PREFERRED_PROVIDER_u-boot ?= "u-boot"
 PREFERRED_PROVIDER_virtual/bootloader ?= "u-boot"
 
+KCONFIG_MODE ?= "alldefconfig"
+KBUILD_DEFCONFIG = "sunxi_defconfig"
 KERNEL_IMAGETYPE ?= "uImage"
 
 IMAGE_FSTYPES += "ext3 tar.gz wic.gz wic.bmap"
